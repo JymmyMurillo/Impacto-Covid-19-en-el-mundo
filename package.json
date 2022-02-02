@@ -1,0 +1,23 @@
+{
+  "name": "impacto-covid-19-en-el-mundo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JymmyMurillo/Impacto-Covid-19-en-el-mundo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JymmyMurillo/Impacto-Covid-19-en-el-mundo/issues"
+  },
+  "homepage": "https://github.com/JymmyMurillo/Impacto-Covid-19-en-el-mundo#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
