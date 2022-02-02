@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./DashBoard.css">
+  <!-- Boostrap css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+</head>
+
+<body class="d-flex flex-row">
+  <nav class="d-flex flex-column align-items-center navBar px-3">
+    <a class="d-flex my-5" href="#"><img class="imgVirus mx-auto" src="../image/coronavirus.png"
+        alt="Logo Coronavirus"></a>
+    <div class="d-flex flex-column align-items-center">
+      <a class="my-3 btn btn-primary active" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" width="90%" height="90%" class="feather feather-pie-chart">
+          <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+          <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+        </svg></a>
+      <a class="my-3 btn btn-primary btn-block" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="currentColor"
+          version="1.1" width="90%" height="90%" fill="none" viewBox="0 0 24 24">
+          <path
+            d="M3 5V19H20V5H3M7 7V9H5V7H7M5 13V11H7V13H5M5 15H7V17H5V15M18 17H9V15H18V17M18 13H9V11H18V13M18 9H9V7H18V9Z" />
+        </svg></a>
+      <a class="my-3 btn btn-primary" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="currentColor"
+          xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="90%" height="90%" viewBox="0 0 24 24">
+          <path
+            d="M16,20H20V16H16M16,14H20V10H16M10,8H14V4H10M16,8H20V4H16M10,14H14V10H10M4,14H8V10H4M4,20H8V16H4M10,20H14V16H10M4,8H8V4H4V8Z" />
+        </svg></a>
+      <a class="my-3 btn btn-primary" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="currentColor"
+          xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="90%" height="90%" viewBox="0 0 24 24">
+          <path
+            d="M6.1,10L4,18V8H21A2,2 0 0,0 19,6H12L10,4H4A2,2 0 0,0 2,6V18A2,2 0 0,0 4,20H19C19.9,20 20.7,19.4 20.9,18.5L23.2,10H6.1M19,18H6L7.6,12H20.6L19,18Z" />
+        </svg></a>
+
+    </div>
+  </nav>
+
+  <div id="sideBar" class="p-3 d-none d-md-block divCovidTracker overflow-auto">
+    <h1 class="fs-3 fw-bold">COVID-19 Tracker</h1>
+    <div id="colorCards" class="mt-4"></div>
+    <p class="fs-3 fw-bold">Top 10 Country</p>
+  </div>
+
+  <script src="./DashBoard.js"></script>
+</body>
+
+</html>

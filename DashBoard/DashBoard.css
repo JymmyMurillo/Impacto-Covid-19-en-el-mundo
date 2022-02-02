@@ -1,0 +1,128 @@
+.navBar {
+  width: 90px;
+  height: 100vh;
+  background-color: #F7F8FC;
+}
+
+@keyframes rotation {
+  from {transform: rotateZ(0deg);}
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.imgVirus {
+  width: 100%;
+  height: auto;
+ animation-name: rotation;
+ animation-duration: 5s;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear;
+}
+
+.btn-primary {
+  color: #3639AE !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: #3639AE !important;
+  color: white !important;
+}
+
+
+/* sideBar */
+
+/*scroll*/
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F7F8FC;
+  border-radius: 10px;
+}
+
+
+
+.divCovidTracker {
+  width: 450px;
+  height: 100vh;
+}
+
+.totalCase {
+  display: flex;
+}
+
+.totalCase:hover {
+  transform: scale(1.02);
+  border: 1px solid red;
+  transition: 0.5s ease-out;
+}
+
+.activeCase {
+  background-color: #FFF9F1;
+}
+
+.activeCase:hover {
+  transform: scale(1.02);
+  border: 1px solid #FF6A07;
+  transition: 0.5s ease-out;
+}
+
+.activeCase>p {
+  color: #FF6A07;
+}
+
+.recoveredCase {
+  background-color: #FFF9F1;
+}
+
+.recoveredCase:hover {
+  transform: scale(1.02);
+  border: 1px solid #82C519;
+  transition: 0.5s ease-out;
+}
+
+.recoveredCase>p {
+  color: #82C519;
+}
+
+.deathsCase {
+  background-color: #EEFBFF;
+}
+
+.deathsCase:hover {
+  transform: scale(1.02);
+  border: 1px solid #3639AE;
+  transition: 0.5s ease-out;
+}
+
+.deathsCase>p {
+  color: #3639AE;
+}
+
+.flag {
+  width: 50px;
+height: auto;
+}
+
+.top10Card {
+  box-shadow: 0px 2px 5px 1px #EEEEEE;
+  min-height: 55px;
+}
+
+.top10Card:hover {
+  transform: scale(1.05);
+}
