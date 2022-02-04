@@ -19,7 +19,12 @@ tr {
 }
 
 tr:nth-child(even) {
-  background-color: #EBEBF7;
+  background-color: #F8F9FE;
+}
+
+tr:hover {
+background-color: #E5E6F6;
+
 }
 
 body {

@@ -1,6 +1,7 @@
 const divSideBar = document.getElementById("sideBar");
 const colorCards = document.getElementById("colorCards");
-// Total Cases
+
+// Total Cases ***************************************************************
 
 fetch("https://disease.sh/v3/covid-19/all")
   .then((response) => response.json())
@@ -49,7 +50,7 @@ fetch("https://disease.sh/v3/covid-19/all")
     console.log(data);
   });
 
-// Top 10
+// Top 10 **************************************************************************
 
 fetch("https://disease.sh/v3/covid-19/countries")
   .then((response) => response.json())
@@ -73,3 +74,39 @@ fetch("https://disease.sh/v3/covid-19/countries")
     </div>`)
     );
   });
+
+// Callin Tracker **************************************************************
+
+const btnTracker = document.getElementById("Tracker");
+
+function iconTracker_1() {
+  btnTracker.src = "../Tracker_1/Tracker_1.html";
+}
+
+function iconTracker_2() {
+  btnTracker.src = "../Tracker_2/Tracker_2.html";
+}
+
+function iconTracker_3() {
+  btnTracker.src = "../Tracker_3/Tracker_3.html";
+}
+
+function iconTracker_4() {
+  btnTracker.src = "../Tracker_4/Tracker_4.html";
+}
+
+const navBtn = document.querySelectorAll(".btn-primary");
+
+navBtn.forEach((btn) => {
+  //console.log(btn)
+  btn.addEventListener("click", () => {
+    removeActiveClasses();
+    btn.classList.add("active");
+  });
+});
+
+function removeActiveClasses() {
+  navBtn.forEach((btn) => {
+    btn.classList.remove("active");
+  });
+}
