@@ -39,3 +39,14 @@ body {
   height: auto;
   background-color: white;
 }
+
+.btnPagination {
+background-color: transparent;
+border: 0;
+
+}
+
+.btnPagination:hover {
+  background-color: #3639AE;
+  color: white !important;
+}
