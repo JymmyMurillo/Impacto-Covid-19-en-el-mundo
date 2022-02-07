@@ -3,7 +3,7 @@ let divCountryCards = document.getElementById("divCountryCards");
 let divMap = document.getElementById("divMap");
 let country = "";
 
-// Agregar a lista seleccionable de paises
+// Agregar a lista seleccionable de paises***************************
 fetch("https://disease.sh/v3/covid-19/countries")
   .then((response) => response.json())
   .then((data) => {
@@ -16,8 +16,11 @@ fetch("https://disease.sh/v3/covid-19/countries")
     );
   });
 
-  console.log(selectCountry.value);
-// Cargando datos de casos globales
+console.log(selectCountry.value);
+  
+
+
+// Cargando datos de casos globales *********************************
 fetch("https://disease.sh/v3/covid-19/all")
   .then((response) => response.json())
   .then((data) => {
@@ -62,7 +65,7 @@ fetch("https://disease.sh/v3/covid-19/all")
           `;
   });
 
-// seleccionando país del que se quieren datos
+// seleccionando país del que se quieren datos *************************
 
 if ((country === "")) {
 
