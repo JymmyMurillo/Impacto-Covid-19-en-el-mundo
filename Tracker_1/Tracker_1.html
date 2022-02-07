@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tracker_1</title>
+  <link rel="stylesheet" href="./Tracker_1.css" />
+
+  <!-- Boostrap css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 </head>
-<body style="width: 100vw; height: 100vh; background-color: blueviolet;">
-  <h1 style="font-size: larger;">Tracker_1</h1>
+
+<body>
+  <div value="usa" class="divBody">
+    <div class="d-flex flex-row align-items-center justify-content-between border-bottom border-2 py-3 fs-5">
+      <div class="d-flex flex-row align-items-center">
+        <select id="selectCountry" class="form-select my-1 entries rounded-0 fs-5 fw-bold"
+          aria-label="Default select example">
+      
+
+
+        </select>
+      </div>
+      <p class="m-0">Updated: February 4, 2022</p>
+    </div>
+
+    <div id="divCountry" class="row row-cols-1 row-cols-sm-2 gap-3 mt-4">
+      <div id="divCountryCards" class="row row-cols-1 row-cols-sm-2">
+
+      </div>
+      <div id="divMap" class="bgcolor">
+        <img class="divMap" src="../image/Mapa.PNG" alt="">
+      </div>
+    </div>
+    <div id="divGlobalCards" class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 bgcolor mt-4"></div>
+
+
+
+  </div>
+  </div>
+
+  <script src="./Tracker_1.js"></script>
 </body>
+
 </html>
