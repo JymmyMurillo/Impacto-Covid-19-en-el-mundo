@@ -16,88 +16,99 @@
 
 <body>
   <div class="main">
-    <div class="container">
-      <div class="title border-bottom ">
-        <h2>Covid-19 Country Wise -Tabs</h2>
-      </div>
-      <div class="row mt-5">
-        <div id="country-flags" class="country d-flex">
-          <button id="btn_usa" class="usa_info"></button>
-        </div>
+    <div class="title border-bottom ">
+      <h2>Covid-19 Country Wise -Tabs</h2>
+    </div>
+
+    <!--TARJETAS PAISES-->
+
+
+    <div class="row mt-5">
+      <div id="country-flags" class="country d-flex">
+        <ul class="list_countrys d-flex">
+          <li><a id="btn_usa" href="#usa" class="usa_info"></a></li>
+          <li><a id="btn_spain" class="spain_info" href="#spain"></a></li>
+          <li><a href="#ita" id="btn_ita" class="ita_info"></a></li>
+          <li><a href="#ind" id="btn_ind" class="ind_info"></a></li>
+          <li><a href="#uk" id="btn_uk" class="uk_info"></a></li>
+          <li><a href="#col" id="btn_col" class="col_info"></a></li>
+          <li><a href="#ven" id="btn_ven" class="ven_info"></a></li>
+          <li><a href="#chi" id="btn_chi" class="chi_info"></a></li>
+          <li><a href="#tur" id="btn_tur" class="tur_info"></a></li>
+        </ul>
       </div>
 
+
+      <!--TARJETAS ESTADISTICAS-->
       <div class="row cards-flags mt-5">
-        <div class="col-md-3 border">
+        <div class="col-md-3">
           <div class="carta  p-1">
             <div class="icono">
               <img src="/image/icons/covid-defult.svg" alt="Imagen">
             </div>
             <div class="info">
-              <h5 class="border-bottom">Total Cases</h5>
-              <p id="total_cases">0</p>
-              <button id="btn_cases"></button>
-
+              <h5 class="border-bottom fs-5 fw-bold p-2">Total Cases</h5>
+              <p class="fs-2 fw-bold p-3 m-0 blueColor" id="total_cases">0</p>
             </div>
           </div>
         </div>
-        <div class="col-md-3 border">
+        <div class="col-md-3">
           <div class="carta p-1">
             <div class="icono">
               <img src="/image/icons/covid-red.svg" alt="Imagen">
             </div>
             <div class="info">
-              <h5 class="border-bottom">Total Deaths</h5>
-              <p id="total_deaths">0</p>
+              <h5 class="border-bottom fs-5 fw-bold p-2">Total Deaths</h5>
+              <p class="fs-2 fw-bold p-3 m-0 redColor" id="total_deaths">0</p>
             </div>
           </div>
         </div>
-        <div class="col-md-3 border">
+        <div class="col-md-3">
           <div class="carta p-1">
             <div class="icono">
               <img src="/image//icons/covid-green.svg" alt="Imagen">
             </div>
             <div class="info">
-              <h5 class="border-bottom">Total Recovered</h5>
-              <p id="total_recovered">0</p>
+              <h5 class="border-bottom fs-5 fw-bold p-2">Total Recovered</h5>
+              <p class="fs-2 fw-bold p-3 m-0 greenColor" id="total_recovered">0</p>
             </div>
           </div>
         </div>
-        <div class="col-md-3 border">
+        <div class="col-md-3">
           <div class="carta p-1">
             <div class="icono">
               <img src="/image//icons/covid-blue.svg" alt="Imagen">
             </div>
             <div class="info">
-              <h5 class="border-bottom">Total Active</h5>
-              <p id="total_active">0</p>
+              <h5 class="border-bottom fs-5 fw-bold p-2">Total Active</h5>
+              <p class="fs-2 fw-bold p-3 m-0 lowBlueColor" id="total_active">0</p>
             </div>
           </div>
         </div>
-        <div class="col-md-3 border">
+        <div class="col-md-3">
           <div class="carta p-1">
             <div class="icono">
               <img src="/image/icons/covid-orange.svg" alt="Imagen">
             </div>
             <div class="info">
-              <h5 class="border-bottom">New Cases</h5>
-              <p id="new_cases">0</p>
+              <h5 class="border-bottom fs-5 fw-bold p-2">New Cases</h5>
+              <p class="fs-2 fw-bold p-3 m-0 orangeColor" id="new_cases">0</p>
             </div>
           </div>
         </div>
-        <div class="col-md-3 border">
+        <div class="col-md-3">
           <div class="carta p-1">
             <div class="icono">
               <img src="/image//icons/covid-redark.svg" alt="Imagen">
             </div>
             <div class="info">
-              <h5 class="border-bottom">New Deaths</h5>
-              <p id="new_deaths">0</p>
+              <h5 class="border-bottom fs-5 fw-bold p-2 m-0 fs-5 fw-bold p-2">New Deaths</h5>
+              <p class="fs-2 fw-bold p-3 m-0 coffeeColor" id="new_deaths">0</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
   </div>
 
   <script src="Tracker_4.js"></script>
