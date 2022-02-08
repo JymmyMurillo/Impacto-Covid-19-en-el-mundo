@@ -11,7 +11,7 @@ body {
   height: auto;
 }
 .carta {
-  background-color: aqua;
+  background-color: white;
   position: relative;
   margin: 1rem;
   overflow: hidden;
@@ -43,4 +43,39 @@ body {
 .flag {
   width: 35px;
   height: 35px;
+}
+
+.country li {
+  list-style: none;
+  margin-right: 1rem;
+  background-color: white;
+  padding: 10px;
+}
+.country li a {
+  text-decoration: none;
+  color: ;
+}
+
+.blueColor {
+  color: #3639ae !important;
+}
+
+.redColor {
+  color: #ff0000;
+}
+
+.greenColor {
+  color: #82c519;
+}
+
+.lowBlueColor {
+  color: #2c6dff;
+}
+
+.orangeColor {
+  color: #ff6a07;
+}
+
+.coffeeColor {
+  color: #b70202;
 }
